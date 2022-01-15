@@ -34,6 +34,8 @@ project {
 object Build : BuildType({
     name = "Test or Deploy to Nexus"
 
+    artifactRules = "+:target/*.jar"
+
     vcs {
         root(DslContext.settingsRoot)
     }
